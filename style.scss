@@ -1,0 +1,138 @@
+$bgblue100: #F6FCFF;
+$neutral1: #19224C;
+$neutral2: #434665;
+$neutral3: #EFEFFF;
+$neutral4: #B47AFF;
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #FCFCFC;
+}
+
+.h6,
+h4 {
+  margin-bottom: 0 !important;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+// header styling 
+.main-header {
+  .bi-bell {
+    color: #C1C1C1;
+    font-size: 1.5rem;
+
+    .badge-bell {
+      padding: 5px;
+      left: 78%;
+      top: 17%;
+    }
+  }
+}
+
+.page-content {
+  background-color: #fff !important;
+
+  .bg-blue-100 {
+    background-color: $bgblue100;
+  }
+
+  .section-title {
+    color: $neutral1;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .balance-wrapper {
+    .balance-title {
+      color: $neutral2;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    .balance-value {
+      color: $neutral1;
+      text-align: right;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      /* 120% */
+    }
+  }
+
+  .box {
+    background-color: $bgblue100;
+
+    .icon-wrapper {
+      background-color: $neutral3;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      i {
+        color: $neutral4;
+      }
+    }
+
+    p {
+      color: $neutral1;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+    .control-icons{
+      .dropdown-toggle{
+        &::after{
+          display: none !important;
+        }
+      }
+      .dropdown-menu{
+        min-width: 80px !important;
+      }
+    }
+
+  }
+  .modal-btn{
+    background-color: #F8E8E9;
+    border : 1px solid #F8E8E9;
+    &:hover{
+      border-color :red; 
+    }
+  }
+}
+.modal-dialog{
+  width: 30%;;
+  .modal-body{
+    p{
+      color: #000;
+      text-align: center;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px; /* 150% */
+      letter-spacing: -0.5px;
+      margin-bottom: 3rem;
+    }
+  }
+}
